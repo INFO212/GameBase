@@ -12,19 +12,17 @@ body {
     padding: 0;
 }
 
-/*
-#header{
+
+.header{
     padding: 20px;
     text-align: center;
     background-color: #c91833;
     color: yellow;
 }
 
-#header_logo {
+#headerlogo {
     height: 2.5em;
 }
-
-*/
 
 #header_logo {
     height: 2.5em;
