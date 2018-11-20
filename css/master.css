@@ -79,20 +79,24 @@ input[type=search]:focus {
 }
 
 
-.container {
+#container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
     overflow: hidden;
     background-color: white;
 
 }
 
+/** ---------------------------------------------------INDEX.HTML - Hjem--------------------------------------------- */
+
+
 #main {
     flex: 70%;
     padding: 20px;
     background-color: white;
+
 }
 
 /* Fake image, just for this example */
