@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GameBase - Hjem</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="script/master.js"></script>
+    <script src="master.js"></script>
     <link rel="stylesheet" href="css/master.css">
 </head>
 <body>
@@ -16,21 +16,16 @@
     <h4 style="text-align:center"><a href="#">MediEvil PS4 Remaster release date Revealed!</a></h4>
     </div>
 
-    <!-- Header -->
-    <div id="header">
-      <h1><img src="img/logo.png" id="header_logo"></h1>
-    </div>
-
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="index.html">Hjem</a>
-        <a>Reviews</a>
-        <a href="games.html">Spill</a>
-        <a>PS4</a>
-        <a>Xbox</a>
-        <a>PC</a>
-        <a>Switch</a>
-        
+    <nav id="nav" class="navbar">
+        <img src="img/logo.png" id="header_logo">
+        <a class="meny">&#9776;</a>
+        <a href="index.html" class="link current">Hjem</a>
+        <a class="link">Reviews</a>
+        <a href="games.html" class="link">Spill</a>
+        <a id="ps4" class="link">PS4</a>
+        <a id="xbox" class="link">Xbox One</a>
+        <a id="pc" class="link">PC</a>
+        <a id="switch" class="link">Switch</a>
         <img src="img/search.png" class="searchIcon">
     </nav>
 

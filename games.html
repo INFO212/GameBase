@@ -6,76 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="script/master.js"></script>
+    <script src="master.js"></script>
 
     <link rel="stylesheet" href="css/master.css">
 </head>
 <body>
 
-    <!-- Top Note/news etc -->
+<!--
+    <!-- Top Note/news etc --
     <div style="background:#333333		;padding:0.3px; color:yellow;">
-    <!--Resize the browser window to see the responsive effect-->
+    <!--Resize the browser window to see the responsive effect--
         <h4 style="text-align:center"><a href="#">MediEvil PS4 Remaster release date Revealed!</a></h4>
     </div>
 
-    <!-- Header -->
+    <!-- Header --
     <div id="header">
         <h1><img src="img/logo.png" id="header_logo"></h1>
     </div>
 
 <!-- Navigation Bar -->
-    <nav>
-        <a href="index.html">Hjem</a>
-        <a>Reviews</a>
-        <a href="games.html">Spill</a>
-        <a>PS4</a>
-        <a>Xbox</a>
-        <a>PC</a>
-        <a>Switch</a>
+
+    <nav id="nav" class="navbar">
+        <img src="img/logo.png" id="header_logo">
+        <a class="meny">&#9776;</a>
+        <a href="index.html" class="link">Hjem</a>
+        <a class="link">Reviews</a>
+        <a href="games.html" class="link current">Spill</a>
+        <a id="ps4" class="link">PS4</a>
+        <a id="xbox" class="link">Xbox One</a>
+        <a id="pc" class="link">PC</a>
+        <a id="switch" class="link">Switch</a>
         <img src="img/search.png" class="searchIcon">
     </nav>
 
-<div class="container">
-
-    <div id="platformMenu">
-        <nav id="platformNav">
-            <a id="all" class="pLink current"> Alle spill</a>
-            <a id="ps4" class="pLink">PlayStation 4</a>
-            <a id="xbox" class="pLink">Xbox One</a>
-            <a id="pc" class="pLink">PC</a>
-            <a id="switch" class="pLink">Nintendo Switch</a>
-            <a id="more" class="pLink">&#9776;</a>
-        </nav>
-    </div>
-
-   <!-- <div id="banner"> </div> -->
-
-    <div id="filterController">
-
-        <div id="viewContainer">
-            <img src="img/listView.png" class="view" id="listView">
-            <img src="img/gridView.png" class="view active" id="gridView">
-        </div>
-
-        <div id="searchDiv">
-        <input type="search" name="search" id="gameSearch" placeholder="Søk etter spill...">
-        </div>
-
-        <div id="sortDiv">
+    <div id="searchOverlay">
+        <span class="close"> Avbryt </span>
+        <div class="searchForm">
             <form>
-                <label>
-                    <select id="sort">
-                        <option value="newest">Nyeste</option>
-                        <option value="upcom">Kommende</option>
-                        <option value="Rating">Rating</option>
-                    </select>
-                </label>
+                <input type="search" name="search" class="searchField" placeholder="Søk etter spill" autofocus>
+                <div id="result"></div>
             </form>
         </div>
     </div>
 
-        <div id="grid"></div>
+<div id="filterController">
 
+    <div id="viewContainer">
+        <img src="img/listView.png" class="view" id="listView">
+        <img src="img/gridView.png" class="view active" id="gridView">
+    </div>
+
+    <div id="searchDiv">
+        <input type="search" name="search" id="gameSearch" placeholder="Søk etter spill...">
+    </div>
+
+    <div id="sortDiv">
+        <form>
+            <label>
+                <select id="sort">
+                    <option value="newest">Nyeste</option>
+                    <option value="upcom">Kommende</option>
+                    <option value="Rating">Rating</option>
+                </select>
+            </label>
+        </form>
+    </div>
+</div>
+
+    <div class="container">
+        <div id="main">
+            <div id="grid"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="generalinfo_footer">
+          <ul>
+              <li>Location of the company</li>
+               <li>phone number</li>
+                <li>Email</li>
+          </ul>
+        </div>
+        <div>
+            <h3>About this webpage</h3>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,</p>
+            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
     </div>
 
 </body>
