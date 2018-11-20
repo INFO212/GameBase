@@ -5,8 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GameBase - Hjem</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script/master.js"></script>
+    <link rel="stylesheet" href="css/master.css">
 </head>
 <body>
+
+    <nav>
+        <a href="index.html">Hjem</a>
+        <a>Reviews</a>
+        <a>Spill</a>
+        <a>PS4</a>
+        <a>Xbox</a>
+        <a>PC</a>
+        <a>Switch</a>
+        
+        <img src="img/search.png" class="searchIcon">
+    </nav>
+
+    <div id="searchOverlay">
+        <span class="close"> Avbryt </span>
+        <div class="searchForm">
+            <form>
+                <input type="search" name="search" class="searchField" placeholder="Søk etter spill" autofocus>
+                <div id="result"></div>
+            </form>
+        </div>
+    </div>
+
+    <div id="container">
+    </div>
 
 </body>
 </html>
