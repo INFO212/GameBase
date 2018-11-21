@@ -150,7 +150,7 @@ $(document).ready(function () {
                         '<div class="imgCol">' + imgList + '</div>';
 
 
-                    let devs = '';
+                    let devs = "";
                     $.each(value.developers, function (key, value) {
                         devs += value.name;
                     });
